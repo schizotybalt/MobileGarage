@@ -1,0 +1,148 @@
+//
+//  CheckVehicle.swift
+//  MobileGarage
+//
+//  Created by Andrew on 11/16/14.
+//  Copyright (c) 2014 iOS Fall 2014 MobileGarage Team. All rights reserved.
+//
+
+/**************************************************************************
+To view updated location:
+
+Go to Xcode->Preferences
+Go to behaviors
+For each option, select "Show debugger with console view"
+Build the solution with the play button instead of keyboard shortcuts
+Navigate to the My Vehicle Page
+Click on Start Trip
+Select Debug->Location->(select an option)
+**************************************************************************/
+
+import UIKit
+import CoreLocation
+
+class VehicleViewController: UIViewController, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet var startTripButton: [UIButton]!
+    
+    // setup of location manager
+    lazy var locationManager: CLLocationManager = {
+        
+        /* Note: most of the configuration is done here,
+        since these settings tend to be static, but it could
+        be done elsewhere */
+        /* Note: will be created when property is first used, and
+        will not be created if the property is never used */
+        var manager = CLLocationManager()
+        manager.delegate = self
+        
+        /* Note: Some of these are defaults, but you will want to tune this to your application */
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.distanceFilter = 1
+        manager.activityType = .Other
+        
+        return manager
+        }()
+    
+    var VIN = ""
+    var TripDistance = 0.0
+    
+    @IBAction func startTripTapped(sender: AnyObject) {
+        
+        var button: UIButton = sender as UIButton
+        
+        let notification = UILocalNotification()
+        notification.alertAction = "Next Oil Change"
+        notification.alertBody = "Oil Change Needed Soon"
+        //WeeksToNextOilChange = (NextOilChangeMilage-CurrentMileage)/WeeklyDistance
+        let now = NSDate()//.date()
+        //NSDate TimeToChangeOil = now + WeeksToNextOilChange
+        //notification.fireDate = NSDate(timeInterval: 0, sinceDate: TimeToChangeOil))
+        notification.fireDate = NSDate(timeInterval: 0, sinceDate: now)
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        
+        if button.titleLabel?.text == "Start Trip" {
+            println("trip has begun")
+            button.setTitle("Stop Trip", forState: .Normal)
+            
+            locationManager.requestAlwaysAuthorization()
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            
+            println("starting to update location\n")
+            locationManager.startUpdatingLocation()
+        }
+        else {
+            println("trip has finished")
+            button.setTitle("Start Trip", forState: .Normal)
+            
+            println("ceasing to update location\n")
+            locationManager.stopUpdatingLocation()
+        }
+    }
+    
+    var previousLocation = nil as CLLocation?
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [CLLocation]!) {
+        
+        /* Note: Good to get the value into CLLocation from AnyObject as soon as possible */
+        
+        // print out all the locations
+        /* Note: some may be queued up when in background */
+//        (locations as [CLLocation]?)?.map({ println($0) })
+        
+        let currentLocation = locations.last
+        println("current location: \(currentLocation)")
+        
+//        println("\(locations.count) locations")
+        
+        if previousLocation != nil {
+            
+            let segmentDistance = previousLocation!.distanceFromLocation(currentLocation)
+            println("segment distance \(segmentDistance)")
+            
+            TripDistance += segmentDistance
+            println("trip distance \(TripDistance)")
+        }
+        
+        //        let location: AnyObject? = locations.last// as CLLocation
+        
+        //        let startloc = locations[locations.startIndex] as CLLocation
+        //        var meters = startloc.distanceFromLocation(currentLocation)
+        //        println("meters: \(meters)")
+        
+        previousLocation = currentLocation!
+        println("previous location: \(previousLocation)\n")
+    }
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        
+        println(error)
+        
+        // locationManager requests errors are handled by just stopping the updates
+        manager?.stopUpdatingLocation()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // for notifications, setup so the user can select
+        if UIApplication.sharedApplication().respondsToSelector("registerUserNotificationSettings:") {
+            UIApplication.sharedApplication().registerUserNotificationSettings(
+                UIUserNotificationSettings(
+                    forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
+                    categories: nil
+                )
+            )
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+}
