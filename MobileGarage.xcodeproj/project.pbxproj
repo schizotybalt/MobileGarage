@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		303F59691A3651C600BD4976 /* garage-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 303F59681A3651C600BD4976 /* garage-32.png */; };
+		303F596B1A3654BD00BD4976 /* TuneupUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F596A1A3654BD00BD4976 /* TuneupUITableViewController.swift */; };
+		303F596F1A368D0300BD4976 /* AddTuneupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F596E1A368D0200BD4976 /* AddTuneupViewController.swift */; };
+		303F59711A3699A800BD4976 /* Tuneups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 303F59701A3699A800BD4976 /* Tuneups.plist */; };
+		304666361A1CD6B0000DF9C4 /* GarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304666351A1CD6B0000DF9C4 /* GarageViewController.swift */; };
+		3057E40B1A195AE600187DA0 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3057E40A1A195AE600187DA0 /* VehicleViewController.swift */; };
+		3057E40F1A1965E900187DA0 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3057E40E1A1965E900187DA0 /* Vehicle.swift */; };
+		3082B21B1A34E57B00D3EDB2 /* VehicleViewController.swift.alt in Resources */ = {isa = PBXBuildFile; fileRef = 3082B21A1A34E57B00D3EDB2 /* VehicleViewController.swift.alt */; };
+		3082B21D1A34F30C00D3EDB2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3082B21C1A34F30C00D3EDB2 /* CloudKit.framework */; };
+		3082B21F1A3540F100D3EDB2 /* MaintenanceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082B21E1A3540F100D3EDB2 /* MaintenanceEvent.swift */; };
+		30AC6A991A18E38B0005B12C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC6A981A18E38B0005B12C /* AppDelegate.swift */; };
+		30AC6A9D1A18E38B0005B12C /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC6A9C1A18E38B0005B12C /* AddVehicleViewController.swift */; };
+		30AC6AA21A18E38B0005B12C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AC6AA01A18E38B0005B12C /* Main.storyboard */; };
+		30AC6AA41A18E38B0005B12C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC6AA31A18E38B0005B12C /* Images.xcassets */; };
+		30AC6AB31A18E38B0005B12C /* MobileGarageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC6AB21A18E38B0005B12C /* MobileGarageTests.swift */; };
+		30CDE45C1A2FD3DD00F547CB /* PListUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CDE45B1A2FD3DD00F547CB /* PListUtils.swift */; };
+		30CE846A1A364CEB00E1E63D /* settings_wrench-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 30CE84691A364CEB00E1E63D /* settings_wrench-100.png */; };
+		490944DF1A3114EE00CE20B9 /* Vehicles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 490944DE1A3114EE00CE20B9 /* Vehicles.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30AC6AAD1A18E38B0005B12C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30AC6A8B1A18E38B0005B12C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30AC6A921A18E38B0005B12C;
+			remoteInfo = MobileGarage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		303F59681A3651C600BD4976 /* garage-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "garage-32.png"; sourceTree = "<group>"; };
+		303F596A1A3654BD00BD4976 /* TuneupUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuneupUITableViewController.swift; sourceTree = "<group>"; };
+		303F596E1A368D0200BD4976 /* AddTuneupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTuneupViewController.swift; sourceTree = "<group>"; };
+		303F59701A3699A800BD4976 /* Tuneups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tuneups.plist; sourceTree = "<group>"; };
+		304666351A1CD6B0000DF9C4 /* GarageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarageViewController.swift; sourceTree = "<group>"; };
+		3057E40A1A195AE600187DA0 /* VehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		3057E40E1A1965E900187DA0 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		3081F7861A1942050034740A /* MobileGarage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MobileGarage.entitlements; sourceTree = "<group>"; };
+		3082B21A1A34E57B00D3EDB2 /* VehicleViewController.swift.alt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VehicleViewController.swift.alt; sourceTree = "<group>"; };
+		3082B21C1A34F30C00D3EDB2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		3082B21E1A3540F100D3EDB2 /* MaintenanceEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintenanceEvent.swift; sourceTree = "<group>"; };
+		30AC6A931A18E38B0005B12C /* MobileGarage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileGarage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AC6A971A18E38B0005B12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AC6A981A18E38B0005B12C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30AC6A9C1A18E38B0005B12C /* AddVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleViewController.swift; sourceTree = "<group>"; };
+		30AC6AA11A18E38B0005B12C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30AC6AA31A18E38B0005B12C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		30AC6AAC1A18E38B0005B12C /* MobileGarageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileGarageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AC6AB11A18E38B0005B12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AC6AB21A18E38B0005B12C /* MobileGarageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileGarageTests.swift; sourceTree = "<group>"; };
+		30CDE45B1A2FD3DD00F547CB /* PListUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListUtils.swift; sourceTree = "<group>"; };
+		30CE84691A364CEB00E1E63D /* settings_wrench-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_wrench-100.png"; sourceTree = "<group>"; };
+		490944DE1A3114EE00CE20B9 /* Vehicles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Vehicles.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30AC6A901A18E38B0005B12C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3082B21D1A34F30C00D3EDB2 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30AC6AA91A18E38B0005B12C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303F596C1A36566C00BD4976 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				304666351A1CD6B0000DF9C4 /* GarageViewController.swift */,
+				30AC6A9C1A18E38B0005B12C /* AddVehicleViewController.swift */,
+				303F596E1A368D0200BD4976 /* AddTuneupViewController.swift */,
+				3057E40A1A195AE600187DA0 /* VehicleViewController.swift */,
+				3082B21A1A34E57B00D3EDB2 /* VehicleViewController.swift.alt */,
+				303F596A1A3654BD00BD4976 /* TuneupUITableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		303F596D1A36568200BD4976 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3057E40E1A1965E900187DA0 /* Vehicle.swift */,
+				3082B21E1A3540F100D3EDB2 /* MaintenanceEvent.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		30AC6A8A1A18E38B0005B12C = {
+			isa = PBXGroup;
+			children = (
+				3082B21C1A34F30C00D3EDB2 /* CloudKit.framework */,
+				30AC6A951A18E38B0005B12C /* MobileGarage */,
+				30AC6AAF1A18E38B0005B12C /* MobileGarageTests */,
+				30AC6A941A18E38B0005B12C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30AC6A941A18E38B0005B12C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30AC6A931A18E38B0005B12C /* MobileGarage.app */,
+				30AC6AAC1A18E38B0005B12C /* MobileGarageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30AC6A951A18E38B0005B12C /* MobileGarage */ = {
+			isa = PBXGroup;
+			children = (
+				303F596D1A36568200BD4976 /* Models */,
+				303F596C1A36566C00BD4976 /* ViewControllers */,
+				3081F7861A1942050034740A /* MobileGarage.entitlements */,
+				30AC6A981A18E38B0005B12C /* AppDelegate.swift */,
+				30AC6AA01A18E38B0005B12C /* Main.storyboard */,
+				30AC6AA31A18E38B0005B12C /* Images.xcassets */,
+				30AC6A961A18E38B0005B12C /* Supporting Files */,
+				30CDE45B1A2FD3DD00F547CB /* PListUtils.swift */,
+			);
+			path = MobileGarage;
+			sourceTree = "<group>";
+		};
+		30AC6A961A18E38B0005B12C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				490944DE1A3114EE00CE20B9 /* Vehicles.plist */,
+				303F59681A3651C600BD4976 /* garage-32.png */,
+				30CE84691A364CEB00E1E63D /* settings_wrench-100.png */,
+				30AC6A971A18E38B0005B12C /* Info.plist */,
+				303F59701A3699A800BD4976 /* Tuneups.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30AC6AAF1A18E38B0005B12C /* MobileGarageTests */ = {
+			isa = PBXGroup;
+			children = (
+				30AC6AB21A18E38B0005B12C /* MobileGarageTests.swift */,
+				30AC6AB01A18E38B0005B12C /* Supporting Files */,
+			);
+			path = MobileGarageTests;
+			sourceTree = "<group>";
+		};
+		30AC6AB01A18E38B0005B12C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30AC6AB11A18E38B0005B12C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30AC6A921A18E38B0005B12C /* MobileGarage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30AC6AB61A18E38B0005B12C /* Build configuration list for PBXNativeTarget "MobileGarage" */;
+			buildPhases = (
+				30AC6A8F1A18E38B0005B12C /* Sources */,
+				30AC6A901A18E38B0005B12C /* Frameworks */,
+				30AC6A911A18E38B0005B12C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileGarage;
+			productName = MobileGarage;
+			productReference = 30AC6A931A18E38B0005B12C /* MobileGarage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30AC6AAB1A18E38B0005B12C /* MobileGarageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30AC6AB91A18E38B0005B12C /* Build configuration list for PBXNativeTarget "MobileGarageTests" */;
+			buildPhases = (
+				30AC6AA81A18E38B0005B12C /* Sources */,
+				30AC6AA91A18E38B0005B12C /* Frameworks */,
+				30AC6AAA1A18E38B0005B12C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30AC6AAE1A18E38B0005B12C /* PBXTargetDependency */,
+			);
+			name = MobileGarageTests;
+			productName = MobileGarageTests;
+			productReference = 30AC6AAC1A18E38B0005B12C /* MobileGarageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30AC6A8B1A18E38B0005B12C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "iOS Fall 2014 MobileGarage Team";
+				TargetAttributes = {
+					30AC6A921A18E38B0005B12C = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 3FT8PS6NT6;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					30AC6AAB1A18E38B0005B12C = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 30AC6A921A18E38B0005B12C;
+					};
+				};
+			};
+			buildConfigurationList = 30AC6A8E1A18E38B0005B12C /* Build configuration list for PBXProject "MobileGarage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30AC6A8A1A18E38B0005B12C;
+			productRefGroup = 30AC6A941A18E38B0005B12C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30AC6A921A18E38B0005B12C /* MobileGarage */,
+				30AC6AAB1A18E38B0005B12C /* MobileGarageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30AC6A911A18E38B0005B12C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3082B21B1A34E57B00D3EDB2 /* VehicleViewController.swift.alt in Resources */,
+				303F59691A3651C600BD4976 /* garage-32.png in Resources */,
+				30AC6AA21A18E38B0005B12C /* Main.storyboard in Resources */,
+				303F59711A3699A800BD4976 /* Tuneups.plist in Resources */,
+				490944DF1A3114EE00CE20B9 /* Vehicles.plist in Resources */,
+				30CE846A1A364CEB00E1E63D /* settings_wrench-100.png in Resources */,
+				30AC6AA41A18E38B0005B12C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30AC6AAA1A18E38B0005B12C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30AC6A8F1A18E38B0005B12C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303F596F1A368D0300BD4976 /* AddTuneupViewController.swift in Sources */,
+				30CDE45C1A2FD3DD00F547CB /* PListUtils.swift in Sources */,
+				3082B21F1A3540F100D3EDB2 /* MaintenanceEvent.swift in Sources */,
+				30AC6A9D1A18E38B0005B12C /* AddVehicleViewController.swift in Sources */,
+				30AC6A991A18E38B0005B12C /* AppDelegate.swift in Sources */,
+				304666361A1CD6B0000DF9C4 /* GarageViewController.swift in Sources */,
+				3057E40F1A1965E900187DA0 /* Vehicle.swift in Sources */,
+				3057E40B1A195AE600187DA0 /* VehicleViewController.swift in Sources */,
+				303F596B1A3654BD00BD4976 /* TuneupUITableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30AC6AA81A18E38B0005B12C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30AC6AB31A18E38B0005B12C /* MobileGarageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30AC6AAE1A18E38B0005B12C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30AC6A921A18E38B0005B12C /* MobileGarage */;
+			targetProxy = 30AC6AAD1A18E38B0005B12C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30AC6AA01A18E38B0005B12C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30AC6AA11A18E38B0005B12C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30AC6AB41A18E38B0005B12C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30AC6AB51A18E38B0005B12C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30AC6AB71A18E38B0005B12C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = MobileGarage/MobileGarage.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MobileGarage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30AC6AB81A18E38B0005B12C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = MobileGarage/MobileGarage.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MobileGarage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30AC6ABA1A18E38B0005B12C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MobileGarageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileGarage.app/MobileGarage";
+			};
+			name = Debug;
+		};
+		30AC6ABB1A18E38B0005B12C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MobileGarageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileGarage.app/MobileGarage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30AC6A8E1A18E38B0005B12C /* Build configuration list for PBXProject "MobileGarage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AC6AB41A18E38B0005B12C /* Debug */,
+				30AC6AB51A18E38B0005B12C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30AC6AB61A18E38B0005B12C /* Build configuration list for PBXNativeTarget "MobileGarage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AC6AB71A18E38B0005B12C /* Debug */,
+				30AC6AB81A18E38B0005B12C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30AC6AB91A18E38B0005B12C /* Build configuration list for PBXNativeTarget "MobileGarageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AC6ABA1A18E38B0005B12C /* Debug */,
+				30AC6ABB1A18E38B0005B12C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30AC6A8B1A18E38B0005B12C /* Project object */;
+}
