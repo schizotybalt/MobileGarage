@@ -12,8 +12,6 @@
 	<dict>
 		<key>49AB27D66B123A69AE16DA004A470864AAD60EFF</key>
 		<string>https://github.com/andrewtilisky/MobileGarage.git</string>
-		<key>F75661750C4105A6941F5824332F62693973561F</key>
-		<string>https://github.com/UACSSE480S/MobileGarage.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MobileGarage.xcodeproj</string>
@@ -21,22 +19,20 @@
 	<dict>
 		<key>49AB27D66B123A69AE16DA004A470864AAD60EFF</key>
 		<string>../../MobileGarage</string>
-		<key>F75661750C4105A6941F5824332F62693973561F</key>
-		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/UACSSE480S/MobileGarage.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F75661750C4105A6941F5824332F62693973561F</string>
+	<string>49AB27D66B123A69AE16DA004A470864AAD60EFF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F75661750C4105A6941F5824332F62693973561F</string>
+			<string>49AB27D66B123A69AE16DA004A470864AAD60EFF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MobileGarage</string>
 		</dict>
